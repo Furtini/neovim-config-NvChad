@@ -22,6 +22,12 @@ opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
 
+opt.wrap = false
+
+-- Search
+opt.hlsearch = false
+opt.incsearch = true
+
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
@@ -29,21 +35,24 @@ opt.mouse = "a"
 
 -- Numbers
 opt.number = true
+opt.relativenumber = true
 opt.numberwidth = 2
 opt.ruler = false
 
 -- disable nvim intro
 opt.shortmess:append "sI"
 
+opt.scrolloff = 8
 opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
 opt.timeoutlen = 400
 opt.undofile = true
+opt.colorcolumn = "100"
 
 -- interval for writing swap file to disk, also used by gitsigns
-opt.updatetime = 250
+opt.updatetime = 50
 
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
